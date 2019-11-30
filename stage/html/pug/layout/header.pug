@@ -1,7 +1,7 @@
 .header
   i.fa.fa-exchange.fa-lg.toggle-sidebar
   .dropdown.notifications-container
-    i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+    i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
     .dropdown-menu(aria-labelledby='notifications')
       .noti-head
         | Notifications
@@ -24,3 +24,4 @@
             i.fa.fa-money.fa-lg
             | You Got Money From Bla Bla Bla
       .noti-foot.text-center: a(href="#") View All Notifications
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon

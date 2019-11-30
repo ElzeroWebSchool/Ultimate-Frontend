@@ -1,19 +1,20 @@
 .header {
   background-color: #fff;
   padding: 20px;
+  .header-icon {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+    margin-left: 10px;
+  }
   .toggle-sidebar {
     cursor: pointer;
   }
   .notifications-container {
     display: inline-block;
     margin-left: 20px;
-    .toggle-notifications {
-      background-color: #f9f9f9;
-      padding: 10px;
-      border-radius: 50%;
-      color: #555;
-      cursor: pointer;
-    }
     .dropdown-menu {
       min-width: 600px;
       border: none;
@@ -32,6 +33,7 @@
         background-color: #333;
         padding: 15px;
         color: #fff;
+        font-weight: bold;
         span {
           float: right;
         }
@@ -41,18 +43,40 @@
         ul {
           margin: 0;
           li {
-            padding: 10px;
+            padding: 5px;
+            font-weight: bold;
+            color: #777;
+            border-bottom: 1px solid #e9e8e8;
+            margin-bottom: 10px;
+            font-size: 15px;
+            &:first-child {
+              padding-top: 0;
+            }
+            &:last-child {
+              padding-bottom: 0;
+              margin-bottom: 0;
+              border-bottom: none;
+            }
             i {
-              background-color: #eee;
-              padding: 10px;
-              border-radius: 50%;
-              width: 45px;
-              height: 45px;
-              line-height: 26px;
+              background-color: #f7f7f7;
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
               text-align: center;
               margin-right: 10px;
               position: relative;
-              top: -2px;
+              top: -5px;
+              font-size: 14px;
+              color: #fff;
+              &.fa-envelope-o {
+                background-color: #4caf50;
+              }
+              &.fa-money {
+                background-color: #2196f3;
+              }
+              &.fa-thumbs-o-up {
+                background-color: #ff9800;
+              }
             }
           }
         }
