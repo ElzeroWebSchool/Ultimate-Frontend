@@ -25,3 +25,32 @@
             | You Got Money From Bla Bla Bla
       .noti-foot.text-center: a(href="#") View All Notifications
   i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/avatar.jpg", alt="User Avatar")
+      span.user Osama Elzero
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Osama Elzero
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Added Comment on Post "How To Make Bla Bla Bla"
+        li Created Post on Category "Science"
+        li Created Chart on Charts Page
+        li Added Comment on Post "How To Make Bla Bla Bla Two"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box
+            i.fa.fa-gear.fa-lg.fa-fw
+            span Settings
+        .col
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw
+            span My Profile
+        .col 
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw
+            span Logout
