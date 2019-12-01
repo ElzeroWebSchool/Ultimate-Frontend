@@ -3,6 +3,18 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  &.open {
+    font-family: "Open Sans", sans-serif;
+  }
+  &.public {
+    font-family: "Public Sans", sans-serif;
+  }
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  &.source {
+    font-family: "Source Sans Pro", sans-serif;
+  }
 }
 .page {
   min-height: 100vh;

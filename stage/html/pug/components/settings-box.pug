@@ -8,7 +8,11 @@
       ul.list-unstyled
         each theme in themes
           li(data-theme=theme)
-    .option-box
+    .option-box.font-options
       h4.option-title Font Options
+      - var fonts = ["open", "public", "roboto", "source"]
+      select.form-control
+        each font in fonts
+          option(value=font)=font + ' Font'
     .option-box
       h4.option-title Sidebar Options
