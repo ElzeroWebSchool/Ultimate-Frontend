@@ -32,6 +32,21 @@ $(function() {
       .parent()
       .toggleClass("hide-settings");
   });
+
+  // Switch Colors Theme
+  var themesClasses = [];
+  $(".color-options li").each(function() {
+    themesClasses.push($(this).data("theme"));
+  });
+  $(".color-options li").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+    $("body")
+      .removeClass(themesClasses.join(" "))
+      .addClass($(this).data("theme"));
+  });
 });
 
 var elem = document.documentElement;

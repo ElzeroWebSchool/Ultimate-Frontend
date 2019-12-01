@@ -10,12 +10,15 @@ $themes: (
   ),
   orange-theme: (
     color: #d35400
+  ),
+  purple-theme: (
+    color: #8e44ad
   )
 );
 
 @each $theme, $map in $themes {
   .#{$theme} {
-    .classname {
+    .page .page-head .page-title {
       color: map-get($map, color);
     }
   }

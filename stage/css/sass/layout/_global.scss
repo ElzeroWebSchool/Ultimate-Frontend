@@ -17,4 +17,14 @@ body {
       width: 100%;
     }
   }
+  .page-head {
+    margin-top: 20px;
+    padding: 20px;
+    .page-title {
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .page-description {
+    }
+  }
 }
