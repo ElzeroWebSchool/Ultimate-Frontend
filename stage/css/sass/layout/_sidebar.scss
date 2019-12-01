@@ -49,6 +49,11 @@
         &:hover {
           padding-left: 25px;
         }
+        &.active {
+          &:before {
+            border-color: #ffc107;
+          }
+        }
         .fa-angle-right {
           float: right;
           position: relative;

@@ -1,0 +1,16 @@
+- var pageTitle = 'Charts';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include pug/layout/meta
+    include pug/layout/styles
+  body
+    .page.home-page
+      include pug/components/settings-box
+      include pug/layout/sidebar
+      .content-area
+        include pug/layout/header
+        .container-fluid
+          .content
+            include pug/components/page-head
+    include pug/layout/scripts
