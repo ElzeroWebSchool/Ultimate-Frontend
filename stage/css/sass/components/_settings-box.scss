@@ -12,6 +12,7 @@
     font-weight: bold;
     color: #666;
     margin: 10px 0 15px;
+    font-size: 18px;
   }
   .toggle-settings {
     position: absolute;
@@ -26,6 +27,10 @@
   &.hide-settings {
     right: -250px;
   }
+  .option-box {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
   .color-options {
     ul {
       $colors: #27ae60, #2980b9, #c0392b, #d35400, #8e44ad;
@@ -35,8 +40,8 @@
         }
       }
       li {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         opacity: 0.7;
         cursor: pointer;
